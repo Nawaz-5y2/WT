@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sample Shopping Cart</h1>
+</header>
+
+<main>
+    <section id="product-list">
+        <h2>Products</h2>
+
+        <div class="product">
+            <img src = "images/z931-fr-1500x1500.avif" width="200" height="200">
+            <span>Vaccum Cleaner</span>
+            <button onclick="addToCart('Product 1', 4500)">Add to Cart (Rs.4500)</button>
+        </div>
+
+        <div class="product">
+            <img src="images/71duCIUwKML._AC_UF350,350_QL80_.jpg" width="200" height="200">
+            <span>Coffee Machine</span>
+            <button onclick="addToCart('Product 2', 5640)">Add to Cart (Rs.5640)</button>
+        </div>
+
+        <div class="product">
+            <img src="images/61g6-FaHucL._AC_UF894,1000_QL80_.jpg" width="200" height="200">
+            <span>Sandwich Grill</span>
+            <button onclick="addToCart('Product 3', 2200)">Add to Cart (Rs.2200)</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems">
+            <!-- Cart items will be added here -->
+        </ul>
+        <p id="totalPrice">Total Price: Rs.0</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Shopping Cart Example</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
